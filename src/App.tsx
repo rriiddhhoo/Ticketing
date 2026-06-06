@@ -7,6 +7,7 @@ import ConcertCard from './components/ConcertCard';
 import BookingModal from './components/BookingModal';
 import MyTickets from './components/MyTickets';
 import { Bookmark, Star, ArrowUpRight, ShieldCheck, Heart, Sparkles, FilterX, HelpCircle } from 'lucide-react';
+import logoMahana from '@/assets/logomahana.png';
 
 export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -251,9 +252,11 @@ export default function App() {
           
           {/* Logo brand pitch */}
           <div className="space-y-4">
-            <h4 className="font-sans font-black text-lg text-zinc-900">
-              FestPass<span className="text-amber-500 font-extrabold">.</span>
-            </h4>
+            <img 
+              src={logoMahana} 
+              alt="Mahana Logo" 
+              className="h-9 w-auto object-contain" 
+            />
             <p className="text-xs text-zinc-400 leading-relaxed font-sans">
               Gateway terpercaya untuk tiket pertunjukan konser musik megah dan festival di Indonesia. Menghubungkan promotor resmi dengan jutaan penggemar berat secara instan.
             </p>

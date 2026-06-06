@@ -1,5 +1,6 @@
 import React from 'react';
 import { Ticket, Search, User, ClipboardList, Sparkles } from 'lucide-react';
+import logoMahana from '@/assets/logomahana.png';
 
 interface NavbarProps {
   onSearchChange: (query: string) => void;
@@ -15,17 +16,12 @@ export default function Navbar({ onSearchChange, searchQuery, onMyTicketsClick, 
         {/* Brand Logo */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2 cursor-pointer">
-            <span className="p-2.5 bg-zinc-950 text-white rounded-xl shadow-sm hover:scale-105 transition-transform" id="nav-brand-icon">
-              <Ticket className="w-5 h-5 rotate-12 text-amber-400" />
-            </span>
-            <div>
-              <h1 className="font-sans font-bold text-xl tracking-tight text-zinc-900" id="nav-brand-title">
-                FestPass<span className="text-amber-500 font-extrabold text-2xl">.</span>
-              </h1>
-              <p className="text-[10px] font-mono tracking-widest text-zinc-400 uppercase -mt-1">
-                Premium Concert Tickets
-              </p>
-            </div>
+            <img 
+              src={logoMahana} 
+              alt="Mahana Logo" 
+              className="h-10 w-auto object-contain hover:scale-105 transition-transform" 
+              id="nav-brand-logo" 
+            />
           </div>
 
           {/* Mobile Tickets Access Button */}
