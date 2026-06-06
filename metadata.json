@@ -1,0 +1,6 @@
+{
+  "name": "Concert Ticket Marketplace",
+  "description": "Premium landing page for listing and purchasing concert tickets, built with React and Tailwind CSS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
